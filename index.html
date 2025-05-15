@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<html lang="en">
+<head>
+    <title>Smokey BBQ</title>
+</head>
+<header>
+    <img src="https://img.freepik.com/premium-photo/meat-banner-set-smoked-meat-sausages-salami-dried-salted-meat-black-stone-background_187166-18229.jpg"
+     alt="header-img" width="200">
+    <h1>Smokey BBQ</h1>
+  <nav>
+    <ul>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#order-form">Order Form</a></li>
+    </ul>
+  </nav>
+</header>
+<section id="menu">
+  <h2>Menu</h2>
+<article id="bbq-chicken" class="menu-item">
+  <h3>BBQ Chicken</h3>
+  <p>Grilled chicken with our special BBQ sauce.<br>
+     <i>price: $12.99</i></p><br>
+     <img id="bbq-chicken" src="https://www.allrecipes.com/thmb/APtZNY1GgOf3Ph0JUc-j4dImjrU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/2467480-southern-bbq-chicken-Allrecipes-Magazine-4x3-1-3e180dccbaae446c8c2d05f708611fc6.jpg" alt="BBQ Chicken" width="20%">
+</article>
+<article id="beef-brisket" class="menu-item">
+    <h3>Beef Brisket</h3>
+  <p>Slow-cooked beef brisket with a smoky flavor.<br>
+     <i>price: $15.99</i></p><br>
+     <img id="beef-brisket" src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/slow-cooker-pot-rost-a529726.jpg?quality=90&resize=500,454" alt="Beef Brisket" width="20%">
+</article>
+<article id="pork-ribs" class="menu-item">
+      <h3>Pork Ribs</h3>
+  <p>Tender pork ribs glazed with our signature sauce.<br>
+     <i>price: $18.99</i></p><br>
+     <img id="pork-ribs" src="https://www.allrecipes.com/thmb/Vr-9r1pDjcuOr0DeZv-g1mGAB3k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-216985-Tender-Pork-Spare-Ribs-DDMFS-4x3-8666-2465d26cb9fe41e78aeceee43c27e8af.jpg" alt="Pork Ribs" width="20%">
+</article>
+</section>
+<section id="order-form">
+  <h2>Order Form</h2>
+  <form>
+    <p>bbq-chicken amount</p><input type="number" id="bbq-chicken-quantity" min="0" name="quantity" placeholder="Quantity" required><br>
+    <p>beef-brisket amount</p><input type="number" id="beef-brisket-quantity" min="0" name="quantity" placeholder="Quantity" required><br>
+    <p>pork-ribs amount</p><input type="number" id="pork-ribs-quantity" min="0" name="quantity" placeholder="Quantity" required><br>
+    <br><br><br>
+    <label>
+    <input type="checkbox" id="extra-sauce" name="extra-sauce">
+    <span>Extra Sauce <i>0.50 EUR</i></span>
+    </label><br>
+    <label>
+    <input type="checkbox" id="side-dish" name="side-dish">
+    <span>Side Dish <i>1.50 EUR</i></span>
+    </label><br>
+    <label>
+    <input type="checkbox" id="dessert" name="dessert">
+    <span>Dessert <i>0.90 EUR</i></span>
+    </label><br>
+    <textarea id="special-request" name="special-request" rows="4" cols="50" placeholder="Special Requests"></textarea><br>
+    <br><br>
+    <input type="submit" value="Go to Checkout">  
+  </form>
+</section>
+<footer>
+  <p>Made with love by <strong>Fysix.</strong>.</p>
+</footer>
+</html>
+<style>
+  body {
+    background-color: bisque;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  input {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+    outline: none;
+  }
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  img {
+    border-radius: 15px;
+    margin: 15px;
+  }
